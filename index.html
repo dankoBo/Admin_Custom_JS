@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="d-flex">
+    
+      <article class="left-side border-end border-1 p-4">
+        
+        <a href="#main"><img src="./images/logo.png" alt=""></a>
+  
+        <div class="navigation">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Admin
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <div class="list-group list-group-flush">
+                    <a href="#users" class="list-group-item mb-4">USERS</a>
+                    <a href="#photo" class="list-group-item mb-4">PHOTO</a>
+                    <a href="#posts" class="list-group-item mb-4">POSTS</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </article>
+  
+      <article class="right-side w-100">
+        <header class="header border-bottom border-3">
+          HEADER
+        </header>
+  
+        <div class="information pt-5"></div>
+  
+  
+      </article>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

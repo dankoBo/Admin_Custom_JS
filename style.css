@@ -1,0 +1,29 @@
+* {
+  background-color: #f6f7fb;
+}
+
+.header {
+  height: 100px;
+}
+
+.left-side {
+  width: 600px;
+  height: 100vh;
+}
+
+.list-group-item {
+  background-color: #f6f7fb !important;
+  border-bottom: 1px solid black !important;
+}
+
+.table {
+  width: 90% !important;
+}
+
+.photo {
+  width: 250px;
+}
+
+.sortby-id {
+  cursor: pointer;
+}
