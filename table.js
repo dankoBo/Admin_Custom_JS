@@ -78,12 +78,10 @@ function createPhotoTable(photo) {
 
 
 //* Sort
-// let sortAscend = false
 
 function sort(data, column) {
     if(column) {
         sortAscend = !sortAscend;
-        console.log(sortAscend);
     }
     
     return data.sort((object1, object2) => {

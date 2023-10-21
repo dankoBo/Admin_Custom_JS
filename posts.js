@@ -29,6 +29,5 @@ function render(data) {
     let tableData = createTableData(...newKeys)
     createTable(allPosts, tableData)
 }
-console.log('hello');
 
 export default renderPosts
