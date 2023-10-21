@@ -1,13 +1,11 @@
-import './style.css'
+import '../style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     Dropdown
 } from 'bootstrap';
-import renderUsers from "./users";
-import renderPosts from "./posts";
-import renderPhotos from './photos';
-
-
+import renderUsers from "../src/users";
+import renderPosts from "../src/posts";
+import renderPhotos from '../src/photos';
 
 function removeElChild() {
     let informationBlock = document.querySelector('.information')

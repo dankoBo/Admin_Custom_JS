@@ -4,7 +4,6 @@ let arrowUp = `<i class="bi bi-arrow-up-short"></i>`
 let arrowDown = `<i class="bi bi-arrow-down-short"></i>`
 let dobleArrow = `<i class="bi bi-arrow-down-up"></i>`
 
-
 //* User and Comments table
 function createTable(bodyHtml, headerHtml) {
 
@@ -50,9 +49,6 @@ function createTableData(...arg) {
     return table
 }
 
-
-
-
 //* Photo table
 function createPhotoWrapper(allPhotoHtml) {
     let wrapper= `
@@ -76,9 +72,7 @@ function createPhotoTable(photo) {
     `
 }
 
-
 //* Sort
-
 function sort(data, column) {
     if(column) {
         sortAscend = !sortAscend;

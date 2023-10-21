@@ -1,7 +1,7 @@
-import { createTable, createTableData, sort } from "./table";
-import removeElChild from "./main"
-let column
+import { createTable, createTableData, sort } from "../src/table";
+import removeElChild from "../src/main"
 
+let column
 async function renderPosts() {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
     let data = await response.json()

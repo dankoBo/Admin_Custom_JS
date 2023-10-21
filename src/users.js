@@ -1,9 +1,9 @@
-import { createTable, createTableData, sort} from "./table";
-import removeElChild from "./main"
-let column
+import { createTable, createTableData, sort} from "../src/table";
+import removeElChild from "../src/main"
 
+let column
 async function renderUsers() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users?_limit=3')
+    const response = await fetch('https://jsonplaceholder.typicode.com/users?_limit=10')
     let data = await response.json()
     let sortedData = sort(data, column)
     render(sortedData)
@@ -11,10 +11,10 @@ async function renderUsers() {
     let tr = document.querySelector('.table thead tr')
     tr.addEventListener('click', event => {
         column = event.target.innerText
+        console.log(column);
         removeElChild()
         renderUsers()
     })
-    
 }
 
 function render(data) {
@@ -30,9 +30,6 @@ function render(data) {
     let tableData = createTableData(...newKeys)
     createTable(allUsers, tableData)
 }
-
-
-
 
 export default renderUsers
 
